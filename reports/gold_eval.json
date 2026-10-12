@@ -1,0 +1,98 @@
+{
+  "n_labeled": 150,
+  "cfpb_label_agreement": 0.6133333333333333,
+  "models": {
+    "TF-IDF baseline": {
+      "n": 150,
+      "accuracy": 0.6466666666666666,
+      "macro_f1": 0.6613842298052826,
+      "per_class": {
+        "FRAUD_UNAUTHORIZED": {
+          "precision": 0.7575757575757576,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.6410256410256411,
+          "support": 45.0
+        },
+        "FEES_OVERDRAFT": {
+          "precision": 0.9047619047619048,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9047619047619048,
+          "support": 21.0
+        },
+        "ACCESS_OPEN_CLOSE": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7027027027027027,
+          "f1-score": 0.6842105263157895,
+          "support": 37.0
+        },
+        "TRANSACTION_FUNDS": {
+          "precision": 0.3488372093023256,
+          "recall": 0.6818181818181818,
+          "f1-score": 0.46153846153846156,
+          "support": 22.0
+        },
+        "SERVICE_OTHER": {
+          "precision": 0.8571428571428571,
+          "recall": 0.48,
+          "f1-score": 0.6153846153846154,
+          "support": 25.0
+        },
+        "accuracy": 0.6466666666666666,
+        "macro avg": {
+          "precision": 0.7069968790899024,
+          "recall": 0.6649676689676689,
+          "f1-score": 0.6613842298052826,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.7124037719386557,
+          "recall": 0.6466666666666666,
+          "f1-score": 0.6580026990553307,
+          "support": 150.0
+        }
+      }
+    }
+  },
+  "flags": {
+    "fraud_or_scam": {
+      "prevalence": 0.30666666666666664,
+      "rules": {
+        "tp": 39,
+        "fp": 26,
+        "fn": 7,
+        "precision": 0.6,
+        "recall": 0.8478260869565217
+      }
+    },
+    "vulnerable_client": {
+      "prevalence": 0.04666666666666667,
+      "rules": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.6,
+        "recall": 0.42857142857142855
+      }
+    },
+    "legal_threat": {
+      "prevalence": 0.04,
+      "rules": {
+        "tp": 4,
+        "fp": 7,
+        "fn": 2,
+        "precision": 0.36363636363636365,
+        "recall": 0.6666666666666666
+      }
+    },
+    "financial_hardship": {
+      "prevalence": 0.04,
+      "rules": {
+        "tp": 1,
+        "fp": 9,
+        "fn": 5,
+        "precision": 0.1,
+        "recall": 0.16666666666666666
+      }
+    }
+  }
+}
