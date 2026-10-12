@@ -1,0 +1,208 @@
+{
+  "n_raw_rows": 14013,
+  "n_clean": 13584,
+  "n_train": 10867,
+  "n_test": 2717,
+  "split": "time",
+  "date_range": [
+    "2021-01-01",
+    "2024-02-08"
+  ],
+  "train_dates": [
+    "2021-01-01",
+    "2023-10-02"
+  ],
+  "test_dates": [
+    "2023-10-02",
+    "2024-02-08"
+  ],
+  "median_words": 180.0,
+  "queue_share": {
+    "TRANSACTION_FUNDS": 0.4544,
+    "FRAUD_UNAUTHORIZED": 0.2328,
+    "ACCESS_OPEN_CLOSE": 0.1881,
+    "FEES_OVERDRAFT": 0.077,
+    "SERVICE_OTHER": 0.0476
+  },
+  "products": {
+    "Checking or savings account": 9856,
+    "Money transfer, virtual currency, or money service": 3728
+  },
+  "issue_to_queue": [
+    {
+      "issue": "Managing an account",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 4771
+    },
+    {
+      "issue": "Closing an account",
+      "queue": "ACCESS_OPEN_CLOSE",
+      "n": 1432
+    },
+    {
+      "issue": "Fraud or scam",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 1418
+    },
+    {
+      "issue": "Problem with a lender or other company charging your account",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 1041
+    },
+    {
+      "issue": "Problem caused by your funds being low",
+      "queue": "FEES_OVERDRAFT",
+      "n": 616
+    },
+    {
+      "issue": "Other transaction problem",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 592
+    },
+    {
+      "issue": "Managing an account",
+      "queue": "ACCESS_OPEN_CLOSE",
+      "n": 480
+    },
+    {
+      "issue": "Managing, opening, or closing your mobile wallet account",
+      "queue": "ACCESS_OPEN_CLOSE",
+      "n": 395
+    },
+    {
+      "issue": "Money was not available when promised",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 360
+    },
+    {
+      "issue": "Unauthorized transactions or other transaction problem",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 347
+    },
+    {
+      "issue": "Opening an account",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 341
+    },
+    {
+      "issue": "Opening an account",
+      "queue": "SERVICE_OTHER",
+      "n": 285
+    },
+    {
+      "issue": "Managing an account",
+      "queue": "FEES_OVERDRAFT",
+      "n": 284
+    },
+    {
+      "issue": "Problem with a lender or other company charging your account",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 264
+    },
+    {
+      "issue": "Opening an account",
+      "queue": "ACCESS_OPEN_CLOSE",
+      "n": 248
+    },
+    {
+      "issue": "Other service problem",
+      "queue": "SERVICE_OTHER",
+      "n": 123
+    },
+    {
+      "issue": "Confusing or missing disclosures",
+      "queue": "SERVICE_OTHER",
+      "n": 92
+    },
+    {
+      "issue": "Unexpected or other fees",
+      "queue": "FEES_OVERDRAFT",
+      "n": 92
+    },
+    {
+      "issue": "Problem with customer service",
+      "queue": "SERVICE_OTHER",
+      "n": 87
+    },
+    {
+      "issue": "Wrong amount charged or received",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 60
+    },
+    {
+      "issue": "Trouble accessing funds in your mobile or digital wallet",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 60
+    },
+    {
+      "issue": "Closing an account",
+      "queue": "FEES_OVERDRAFT",
+      "n": 47
+    },
+    {
+      "issue": "Confusing or misleading advertising or marketing",
+      "queue": "SERVICE_OTHER",
+      "n": 29
+    },
+    {
+      "issue": "Problem adding money",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 24
+    },
+    {
+      "issue": "Lost or stolen check",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 21
+    },
+    {
+      "issue": "Lost or stolen money order",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 18
+    },
+    {
+      "issue": "Incorrect information on your report",
+      "queue": "SERVICE_OTHER",
+      "n": 11
+    },
+    {
+      "issue": "Problem with fraud alerts or security freezes",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 9
+    },
+    {
+      "issue": "Overdraft, savings, or rewards features",
+      "queue": "FEES_OVERDRAFT",
+      "n": 7
+    },
+    {
+      "issue": "Credit monitoring or identity theft protection services",
+      "queue": "FRAUD_UNAUTHORIZED",
+      "n": 7
+    },
+    {
+      "issue": "Improper use of your report",
+      "queue": "SERVICE_OTHER",
+      "n": 6
+    },
+    {
+      "issue": "Managing an account",
+      "queue": "SERVICE_OTHER",
+      "n": 6
+    },
+    {
+      "issue": "Problem with a credit reporting company's investigation into an existing problem",
+      "queue": "SERVICE_OTHER",
+      "n": 4
+    },
+    {
+      "issue": "Problem with a company's investigation into an existing problem",
+      "queue": "SERVICE_OTHER",
+      "n": 4
+    },
+    {
+      "issue": "Incorrect exchange rate",
+      "queue": "TRANSACTION_FUNDS",
+      "n": 3
+    }
+  ]
+}

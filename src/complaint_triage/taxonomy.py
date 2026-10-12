@@ -35,16 +35,19 @@ QUEUES: dict[str, str] = {
 
 # (pattern on lower-cased "issue | sub-issue", queue). First match wins.
 _RULES: list[tuple[str, str]] = [
-    (r"fraud|scam|unauthori[sz]ed|identity theft|without (your )?consent|"
-     r"didn't authorize|did not authorize", "FRAUD_UNAUTHORIZED"),
+    (r"fraud|scam|unauthori[sz]ed|not authori[sz]ed|identity theft|"
+     r"without (your |my )?consent|didn't authorize|did not authorize", "FRAUD_UNAUTHORIZED"),
     (r"\bfees?\b|funds being low|overdraft|non-sufficient|\binterest\b",
      "FEES_OVERDRAFT"),
+    (r"advertis|disclosure|marketing|customer service|other service problem",
+     "SERVICE_OTHER"),
     (r"closing|closed|opening an account|open an account|mobile wallet|"
      r"accessing (the |your )?account|\baccess\b|locked|frozen|freez",
      "ACCESS_OPEN_CLOSE"),
     (r"deposit|withdraw|not available when promised|transaction|wrong amount|"
      r"exchange rate|disbursed|cashing a check|banking error|trouble (getting|sending)|"
-     r"transfer|payment|debit or atm card|charging your account",
+     r"transfer|payment|debit or atm card|charging your account|accessing funds|"
+     r"adding money|lost or stolen (check|money order)",
      "TRANSACTION_FUNDS"),
 ]
 _COMPILED = [(re.compile(p), q) for p, q in _RULES]

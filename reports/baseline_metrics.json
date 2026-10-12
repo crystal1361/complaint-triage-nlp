@@ -1,0 +1,126 @@
+{
+  "n": 2717,
+  "accuracy": 0.6142804563857196,
+  "macro_f1": 0.5763111416534059,
+  "per_class": {
+    "FRAUD_UNAUTHORIZED": {
+      "precision": 0.5254777070063694,
+      "recall": 0.5956678700361011,
+      "f1-score": 0.5583756345177665,
+      "support": 554.0
+    },
+    "FEES_OVERDRAFT": {
+      "precision": 0.6586826347305389,
+      "recall": 0.5288461538461539,
+      "f1-score": 0.5866666666666667,
+      "support": 208.0
+    },
+    "ACCESS_OPEN_CLOSE": {
+      "precision": 0.5859766277128547,
+      "recall": 0.685546875,
+      "f1-score": 0.6318631863186318,
+      "support": 512.0
+    },
+    "TRANSACTION_FUNDS": {
+      "precision": 0.6767842493847416,
+      "recall": 0.6283320639756284,
+      "f1-score": 0.6516587677725119,
+      "support": 1313.0
+    },
+    "SERVICE_OTHER": {
+      "precision": 0.5096153846153846,
+      "recall": 0.4076923076923077,
+      "f1-score": 0.452991452991453,
+      "support": 130.0
+    },
+    "accuracy": 0.6142804563857196,
+    "macro avg": {
+      "precision": 0.5913073206899779,
+      "recall": 0.5692170541100381,
+      "f1-score": 0.5763111416534059,
+      "support": 2717.0
+    },
+    "weighted avg": {
+      "precision": 0.6194362865427413,
+      "recall": 0.6142804563857196,
+      "f1-score": 0.6144267834224681,
+      "support": 2717.0
+    }
+  },
+  "timing": {
+    "fit_seconds": 22.23637468600009,
+    "predict_ms_per_item": 0.29987670739784006
+  },
+  "top_terms": {
+    "ACCESS_OPEN_CLOSE": [
+      "closed",
+      "close",
+      "to close",
+      "closed my",
+      "access",
+      "accounts",
+      "closure",
+      "closing",
+      "account",
+      "branch",
+      "reason",
+      "close my"
+    ],
+    "FEES_OVERDRAFT": [
+      "fees",
+      "fee",
+      "overdraft",
+      "charged",
+      "charge",
+      "overdrawn",
+      "overdraft fees",
+      "the fee",
+      "negative",
+      "these fees",
+      "00 fee",
+      "over"
+    ],
+    "FRAUD_UNAUTHORIZED": [
+      "fraud",
+      "scam",
+      "fraudulent",
+      "unauthorized",
+      "name",
+      "cashapp",
+      "app",
+      "venmo",
+      "my bank",
+      "zelle",
+      "00",
+      "was opened"
+    ],
+    "SERVICE_OTHER": [
+      "bonus",
+      "promotion",
+      "coinbase",
+      "offer",
+      "open",
+      "the bonus",
+      "the terms",
+      "advertised",
+      "opening",
+      "paypal",
+      "to cash",
+      "terms"
+    ],
+    "TRANSACTION_FUNDS": [
+      "atm",
+      "deposited",
+      "withdrawal",
+      "funds",
+      "the atm",
+      "my money",
+      "card",
+      "receipt",
+      "claim",
+      "frozen",
+      "hold",
+      "money"
+    ]
+  }
+}

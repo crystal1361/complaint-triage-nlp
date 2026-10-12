@@ -18,6 +18,11 @@ def test_taxonomy_priorities():
     assert map_to_queue("Managing an account", "Deposits and withdrawals") == "TRANSACTION_FUNDS"
     assert map_to_queue("Money was not available when promised") == "TRANSACTION_FUNDS"
     assert map_to_queue("Other service problem") == "SERVICE_OTHER"
+    assert map_to_queue("Problem with a lender or other company charging your account",
+                        "Transaction was not authorized") == "FRAUD_UNAUTHORIZED"
+    assert map_to_queue("Opening an account", "Account opened without my consent or knowledge") == "FRAUD_UNAUTHORIZED"
+    assert map_to_queue("Opening an account", "Didn't receive terms that were advertised") == "SERVICE_OTHER"
+    assert map_to_queue("Trouble accessing funds in your mobile or digital wallet") == "TRANSACTION_FUNDS"
 
 
 def test_clean_text_collapses_redactions():

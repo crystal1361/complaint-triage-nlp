@@ -73,7 +73,7 @@ def cmd_baseline(a):
     _save_json(m, REPORTS / "baseline_metrics.json")
     FIG.mkdir(parents=True, exist_ok=True)
     plots.confusion(test["queue"], preds["pred"], LABELS,
-                    "TF-IDF + logistic regression, held-out month", FIG / "confusion_baseline.png")
+                    "TF-IDF + logistic regression, most recent 20% of complaints", FIG / "confusion_baseline.png")
     print(f"baseline: accuracy={m['accuracy']:.3f} macro_f1={m['macro_f1']:.3f} "
           f"({timing['predict_ms_per_item']:.2f} ms/complaint)")
 
